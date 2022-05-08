@@ -1,12 +1,14 @@
 /*
 ***********************
-*Configurações iniciais
+*CONFIGURATIONS INITIALS
 ***********************
 */
 :root {
     --family-font-primary: 'Strait', sans-serif;
     --family-font-secundary: 'Puritan', sans-serif;
     --color-primary: #997e5e;
+    --color-secundary: #3c2915;
+    --color-primary-light: #f5eee6;
 }
 
 * {
@@ -216,4 +218,124 @@ body {
 .text-52anos p {
     margin-bottom: 1rem;
     margin-right: 1rem;
+}
+
+/*
+****************
+*Section SERVICES
+*****************
+*/
+
+.services {
+    padding: 6.2rem 0;
+    text-align: center;
+    color: var(--color-secundary);
+    background-color: var(--color-primary-light);
+}
+
+.services .container h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.services .container .boxes {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .container .boxes .box {
+    border: 3px solid var(--color-primary);
+    padding: 3rem;
+    margin: 2.5rem;
+}
+
+.services .container .boxes .box h4 {
+    color: var(--color-secundary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.services .container .boxes .box p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+/*
+****************
+*Section SCHEDULING
+*****************
+*/
+
+.scheduling {
+    background-color: var(--color-primary);
+    padding: 6rem 0;
+    background-image: url(/images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    height: 1000px;
+}
+
+.scheduling .container h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.scheduling .container img {
+    margin: 0 auto;
+    display: block;
+}
+
+.scheduling .container .personal-data form {
+    margin-top: 3rem;
+}
+
+.scheduling .container .personal-data {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.scheduling .container .personal-data input-wrapper {}
+
+.scheduling .container .personal-data label {
+    display: block;
+    color: var(--color-primary-light);
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.scheduling .container .personal-data input {
+    padding: 10px 2px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.scheduling .container .personal-data input placeholder {
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+.scheduling .container .personal-data select {
+    outline: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+}
+
+.scheduling .container .personal-data .input-wrapper textarea {
+    width: 100%;
 }
