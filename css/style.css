@@ -34,6 +34,7 @@ body {
 */
 .home {
     background-image: url("/images/imagem-2.jpg");
+    background-attachment: fixed;
     height: 100vh;
     background-size: cover;
     position: relative;
@@ -277,7 +278,6 @@ body {
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 300px;
-    height: 1000px;
 }
 
 .scheduling .container h2 {
@@ -302,8 +302,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-.scheduling .container .personal-data input-wrapper {}
 
 .scheduling .container .personal-data label {
     display: block;
@@ -338,4 +336,120 @@ body {
 
 .scheduling .container .personal-data .input-wrapper textarea {
     width: 100%;
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+.scheduling .container .personal-data button {
+    padding: 10px 5px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: var(--color-secundary);
+    color: white;
+    cursor: pointer;
+}
+
+/*
+****************
+*Section PHOTOS
+*****************
+*/
+
+.gallery {
+    background-color: var(--color-primary-light) padding: 6rem 0;
+}
+
+.gallery .container h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    color: var(--color-secundary)
+}
+
+.gallery .container img {
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery .container .gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 3rem auto;
+}
+
+.gallery .container .gallery-wrapper div {
+    border: 8px solid var(--color-primary);
+    margin: 0.5rem;
+    width: 38%;
+}
+
+.gallery .container .gallery-wrapper div img {
+    width: 100%;
+}
+
+/*
+****************
+*Section LOCATION
+*****************
+*/
+
+.location {
+    padding: 100px 0;
+    background-image: url(/images/bg-location.jpg);
+    background-size: cover;
+}
+
+.location .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 3rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    margin-right: 1rem;
+}
+
+.text span {
+    display: block;
+    margin: 3px;
+}
+
+.text span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+/*
+****************
+*Section FOOTER
+*****************
+*/
+footer {
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+
 }
